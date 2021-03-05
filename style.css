@@ -12,10 +12,7 @@ ul, li {
    list-style: none;
 }
 
-
 .container {
-   max-width: 90vw;
-   margin: 0 auto;
 }
 
 /* Header */
@@ -44,7 +41,8 @@ header nav ul li a img {
 
 /* Main */
 main {
-   width:80vw;
+   max-width: 90vw;
+   margin: 0 auto;
 }
 
 main .photo{
@@ -168,7 +166,6 @@ main .price button a {
 }
 
 /* Section */
-
 section {
    margin: 25px 10px;
    background-color: #F9F7D6;
@@ -254,19 +251,54 @@ svg:hover path {
    }
 }
 
+
+
 /* Desktop */
 @media (min-width: 780px) {
    /* Main */
    main {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      max-width: 100vw;
    }
    main .photo {
       padding: 10px;
-      background: red;
    }
    main .photo img {
-      height: 330px;
+      height: 350px;
       
+   }
+
+
+   /* Section */
+   section {
+      display: flex;
+      justify-content: center;
+
+   }
+   section .card {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      margin-left: 25px;
+   }
+   
+   section .card img {
+      margin-right: 20px;
+   }
+   section .card div p {
+      display: block;
+      margin-bottom: 4px;
+   
+      font-size: 14px;
+      line-height: 12px;
+   
+      color: #707070;
+   }
+
+   /* Footer */
+   footer p {
+      font-size: 16px;
+      line-height: 14px;
    }
 }
